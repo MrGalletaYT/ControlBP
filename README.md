@@ -1,7 +1,7 @@
 # ControlBP
 
 ControlBP 
-A plugin to control users in a fun way, it can replace the Frezzes. This plugin was created for the WarCraft server by the Developer ByPaps It is not finished
+A Plugin that will control people with a minimum distance, it can replace the Frezzes. This plugin was created for the WarCraft server by the Developer ByPaps It is not finished
 
 # Commands & Permissions
 ```
