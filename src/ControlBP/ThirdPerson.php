@@ -3,15 +3,15 @@ namespace controlbp;
 
 use pocketmine\Player;
 use pocketmine\plugin\Plugin;
-use pocketmine\scheduler\Task;
+use pocketmine\scheduler\Thrid;
 
-class InvisibilityTask extends Task{
+class ThridPerson extends Thrid{
     private $p;
     public function __construct(Plugin $main, Player $p){
         $this->p = $p;
     }
     public function onRun(int $tick) : void{
-        $this->p->sendMessage("You are no longer invisible.");
+        $this->p->sendMessage("You are controlling.");
         foreach($this->getOwner()->getServer()->getOnlinePlayers() as $online){
             $online->showPlayer($this->p);
         }
