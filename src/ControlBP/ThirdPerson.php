@@ -15,7 +15,7 @@ class ThridPerson extends Thrid{
         foreach($this->getOwner()->getServer()->getOnlinePlayers() as $online){
             $online->showPlayer($this->p);
             
-    public function onRun(int $tick) : void{
+    public function offRun(int $tick) : void{
         $this->p->sendMessage("You are not controlling.");
         foreach($this->getOwner()->getServer()->getOnlinePlayers() as $online){
             $online->showPlayer($this->p);         
