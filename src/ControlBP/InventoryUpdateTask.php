@@ -1,20 +1,20 @@
 <?php
-namespace icontrolu;
+namespace controlbp;
 
 use pocketmine\scheduler\Task;
 
 class InventoryUpdateTask extends Task{
-    /** @var iControlU $owner */
+    /** @var controlbp $owner */
     private $owner;
     /**
      * InventoryUpdateTask constructor.
-     * @param iControlU $owner
+     * @param controlbp $owner
      */
-    public function __construct(iControlU $owner) {
+    public function __construct(controlbp $owner) {
         $this->owner = $owner;
     }
     public function onRun(int $tick) : void{
-        /** @var iControlU $owner */
+        /** @var controlbp $owner */
         $owner = $this->owner;
         foreach($owner->s as $session){
             $session->syncInventory();
