@@ -1,30 +1,27 @@
-name: ControlBP
-main: ControlBP\ControlBP
-version: 1.0.0
-author: ByPaps
-api: [1.19.7]
+name: iControlU
+main: icontrolu\iControlU
+version: 1.4.0
+author: Falkirks
+api: [3.0.0, 4.0.0]
 load: POSTWORLD
 commands:
- ct:
-  permission: ct.commnd.use
-  description: Control from afar
-  usage: /ct third >Player<
- ct blow:
-  permission: ct.command.blow
-  description: Hit from afar
+ icu:
+  permission: icu.use
+  description: Control other players
+  usage: /icu <control <player> / stop>
 permissions:
- ct:
+ icu:
+  default: op
+  children:
+   icu.use:
     default: op
-    description:
-   ct.command.true:
+    description: Main iControlU perm
+   icu.control:
     default: op
-    description: 
-   ct.command.false:
+    description: Can control others
+   icu.stop:
     default: op
-    description: 
-   ct.command.place:
+    description: Stop controlling
+   icu.exempt:
     default: op
-    description: 
-   ct.command.blow:
-    default: op
-    description: 
+    description: Exempt from being controlled
