@@ -7,7 +7,7 @@ use pocketmine\command\CommandSender;
 use pocketmine\event\block\BlockBreakEvent;
 use pocketmine\event\block\BlockPlaceEvent;
 use pocketmine\event\entity\EntityMoveEvent;
-use controlbp\InventoryUpdateTask;
+use controlbp\InventoryHandle;
 use pocketmine\event\player\PlayerAnimationEvent;
 use pocketmine\event\player\PlayerChatEvent;
 use pocketmine\event\player\PlayerMoveEvent;
