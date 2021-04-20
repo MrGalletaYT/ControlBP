@@ -1,5 +1,5 @@
 <?php
-namespace icontrolu;
+namespace controlbp;
 
 use pocketmine\Player;
 use pocketmine\plugin\Plugin;
